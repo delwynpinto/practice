@@ -1,4 +1,7 @@
-##Changes
+#Changes
+
+##0.0.3
+Added Angular Material.
 
 ##0.0.2
 Added route to home page.
