@@ -2,7 +2,8 @@
 
 ##0.0.3
 Added Angular Material.
-Added Side Navigation Menu
+Added Side Navigation Menu.
+Modified Side Menu to be dynamic.
 
 ##0.0.2
 Added route to home page.
