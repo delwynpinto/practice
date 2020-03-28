@@ -1,0 +1,14 @@
+.upload-conatiner {
+	height: 50px;
+	width: 100%;
+}
+
+.upload {
+	height: 100%;
+	width: 100%;
+	border: solid;
+}
+
+.image {
+	max-height: 200px;
+}

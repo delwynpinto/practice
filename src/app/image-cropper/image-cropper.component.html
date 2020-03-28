@@ -1,1 +1,21 @@
-<p>image-cropper works!</p>
+<div class="upload-conatiner">
+  <div class="upload">
+    Select Image to upload <input type="file" (change)="onSelectFile($event)">
+  </div>
+</div>
+
+<div style="display:none;"> <canvas id="canvas"></canvas> </div>
+
+Original Image : <br>
+<img *ngIf="fileUrl" [src]="fileUrl" class="image"> <br>
+horizontal : 755 x 450 <br>
+<img [src]="crop1" class="image" alt="File isn't ready yet">
+<br>
+vertical : 365 x 450 <br>
+<img [src]="crop2" class="image" alt="File isn't ready yet">
+<br>
+horizontal small : 365 x 212 <br>
+<img [src]="crop3" class="image" alt="File isn't ready yet">
+<br>
+gallery : 380 x 380 <br>
+<img [src]="crop4" class="image" alt="File isn't ready yet">

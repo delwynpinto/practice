@@ -1,5 +1,8 @@
 #Changes
 
+##0.1.0
+Added Image Cropper code.
+
 ##0.0.3
 Added Angular Material.
 Added Side Navigation Menu.
