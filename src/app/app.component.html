@@ -1,6 +1,19 @@
-<div lass="example-container" >
+<div class="example-container">
 	<mat-toolbar color="primary" class="example-toolbar">
-	    <button mat-icon-button><mat-icon>menu</mat-icon></button>
+	    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
 	    <h1 class="example-app-name">Practice App</h1>
 	</mat-toolbar>
+
+	<mat-sidenav-container class="example-sidenav-container" (backdropClick)="close()">
+		<mat-sidenav #snav [mode]="push" (keydown.escape)="close()">
+			<mat-nav-list>
+				<a mat-list-item routerLink="/">Home</a>
+				<a mat-list-item routerLink="/image-cropper">Image Cropper</a>
+			</mat-nav-list>
+		</mat-sidenav>
+
+		<mat-sidenav-content>
+			<router-outlet></router-outlet>
+		</mat-sidenav-content>
+	</mat-sidenav-container>
 </div>
