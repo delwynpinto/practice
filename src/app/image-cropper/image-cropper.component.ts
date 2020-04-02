@@ -29,6 +29,13 @@ export class ImageCropperComponent {
 		}
 	}
 
+	viewOnImgur(imageBase64) {
+		console.log(imageBase64);
+		var blob = new Blob([imageBase64], {type: 'image/png'});
+		var file = new File([blob], 'imageFileName.png');
+		console.log(file);
+	}
+
 	bufferCanvas(image) {
 		var bufferCanvas = document.createElement('canvas');
 		var bufferContext = bufferCanvas.getContext('2d');
