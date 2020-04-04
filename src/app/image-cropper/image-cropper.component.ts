@@ -30,30 +30,25 @@ export class ImageCropperComponent {
 		}
 	}
 
+	// Kept on hold owing to API experiencing issues at the time of development
 	viewOnImgur(imageBase64) {
 		let base64ContentArray = imageBase64.split(",") 
 		// base64 content cannot contain whitespaces but nevertheless skip if there are!
 		let mimeType = base64ContentArray[0].match(/[^:\s*]\w+\/[\w-+\d.]+(?=[;| ])/)[0]
 
 		var blob = new Blob([imageBase64], {type: mimeType});
-		// var file = new File([blob], 'imageFileName.png');
-		const body = {
-			image : blob,
-			title : 'test',
-			type: 'file',
-			description : 'Practice'
-		}
 		const headers = { 'Authorization': 'Client-ID 6272ea6b290ade8' }
-		// this.http.post("https://api.imgur.com/3/upload",body,{ headers }).subscribe(response =>{
-		// 	console.log(response);
-		// });
-
+		
 		const formData = new FormData();
     	formData.append('image', blob);
     	formData.append('title', 'test');
-    	formData.append('type', 'file');
-    	this.http.post("https://api.imgur.com/3/upload",formData,{ headers }).subscribe(response =>{
+    	formData.append('type', 'base64');
+    	
+    	formData.append('name', 'practice image');
+    	this.http.post("https://api.imgur.com/3/image",formData,{ headers }).subscribe(response =>{
 			console.log(response);
+		},error =>{
+			console.log("upload error ", error);
 		});
 	}
 

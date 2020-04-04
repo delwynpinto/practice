@@ -1,5 +1,8 @@
 #Changes
 
+##0.1.1
+Added code to anonymously upload a cropped image to IMGUR
+
 ##0.1.0
 Added Image Cropper code.
 

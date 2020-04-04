@@ -13,11 +13,14 @@ horizontal : 755 x 450
 <br>
 <img [src]="crop1" class="image" alt="File isn't ready yet">
 <br>
-vertical : 365 x 450 <br>
+vertical : 365 x 450 
+<button *ngIf="crop1" mat-button (click)="viewOnImgur(crop2)">View on Imgur</button><br>
 <img [src]="crop2" class="image" alt="File isn't ready yet">
 <br>
-horizontal small : 365 x 212 <br>
+horizontal small : 365 x 212 
+<button *ngIf="crop1" mat-button (click)="viewOnImgur(crop3)">View on Imgur</button><br>
 <img [src]="crop3" class="image" alt="File isn't ready yet">
 <br>
-gallery : 380 x 380 <br>
+gallery : 380 x 380 
+<button *ngIf="crop1" mat-button (click)="viewOnImgur(crop4)">View on Imgur</button><br>
 <img [src]="crop4" class="image" alt="File isn't ready yet">
