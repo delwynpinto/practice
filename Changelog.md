@@ -1,5 +1,9 @@
 #Changes
 
+##0.1.2
+Added description on home page.
+Closing side menu on button click.
+
 ##0.1.1
 Added code to anonymously upload a cropped image to IMGUR
 
