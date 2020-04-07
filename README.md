@@ -26,6 +26,42 @@ decide how to crop the images to the smaller size.
 
 ---------------------------------------------------------------------------
 
+# IP Address Finder
+
+Examine the Sample Input below:
+
+input = ["1233454356\tGET /index.html\t10.10.10.1\n",
+"1233454356\tGET /index.html\t10.10.10.1\n",
+"1233454356\tGET /index.html\t10.10.10.1\n",
+"1233454356\tGET /index.html\t10.13.10.1\n",
+"1233454356\tGET /index.html\t10.14.10.1\n",
+"1233454356\tGET /index.html\t10.14.10.1\n",
+"1233454356\tGET /index.html\t10.14.10.1\n",
+"1233454356\tGET /index.html\t123.14.10.1\n",
+"1233454356\tGET /index.html\t10.14.10.1\n",
+"1233454356\tGET /index.html\t10.14.10.1\n",
+"1233454356\tGET /index.html\t10.14.10.1\n",
+"1233454356\tGET /index.html\t10.14.11.1\n",
+"1233454356\tGET /index.html\t10.14.11.1\n",
+"1233454356\tGET /index.html\t10.14.11.1\n",
+"1233454356\tGET /index.html\t10.14.11.1\n",
+"1233454356\tGET /index.html\t10.14.11.1\n",
+"1233454356\tGET /index.html\t10.14.10.1\n",
+"1233454356\tGET /index.html\t123.14.10.1\n"]
+
+Your task is to write javascript code to find the top ten IP address and print them in following format:
+
+Sample output:
+
+RANK    Input               COUNT
+1       10.14.10.1          7
+2       10.14.11.1          5
+3       10.10.10.1          3
+4       123.14.10.1         2
+5       10.13.10.1          1
+
+---------------------------------------------------------------------------
+
 # Auto Generated
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.

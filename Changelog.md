@@ -1,5 +1,11 @@
 #Changes
 
+##0.2.0
+Added IP Address finder component.
+Added sample JSON input file.
+Added config settings in tsconfig to enable reason JSON files.
+Added IP Address Finder details in Readme.
+
 ##0.1.2
 Added description on home page.
 Closing side menu on button click.
