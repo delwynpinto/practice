@@ -8,33 +8,33 @@ import IP from '../../assets/IP.json';
 })
 export class IpAddressFinderComponent {
 
-	ipAddresses = [];
+	/*
+	result : Object containing the final result in the format expected with
+		key : IP Adsress
+		value : count of the times IP appears in input			
+	*/
 	result = new Object();
 	constructor() {
 		this.addressFinder(IP);
 	}
 
-	/*
+	
+	addressFinder(IP) {
+		/*
 		Splitting each element by the tab character
 		Followed by splitting the 3rd element of the returned array by the new line character
 		The first element in the returned array is the IP Address
-	*/
-	addressFinder(IP) {
-
-		IP.forEach(el =>{
-			this.ipAddresses.push( el.split('\t')[2].split('\n')[0] );
-		});
-		console.log(this.ipAddresses);
-
-		this.ipAddresses.forEach(el =>{
-			if(this.result.hasOwnProperty(el)) {
-				this.result[el]++;
+		*/
+		IP.forEach(el =>{			
+			var ip = el.split('\t')[2].split('\n')[0];
+			if(this.result.hasOwnProperty(ip) ) {
+				// If ip already added, increment the counter
+				this.result[ip]++;
 			}
 			else {
-				this.result[el] = 1;
+				this.result[ip] = 1;
 			}
 		});
-		console.log(this.result);
 	}
 
 }

@@ -1,7 +1,8 @@
 #Changes
 
 ##0.2.1
-Extracting IP Addresses from the input JSON Array
+Added code to extract IP Addresses from the input JSON Array.
+Storing the IP Address and its respective counter in an Object.
 
 ##0.2.0
 Added IP Address finder component.
