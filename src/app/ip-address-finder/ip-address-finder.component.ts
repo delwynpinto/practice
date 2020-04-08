@@ -9,8 +9,20 @@ import IP from '../../assets/IP.json';
 export class IpAddressFinderComponent {
 
 	constructor() {
-		console.log(IP);
+		this.addressFinder(IP);
 	}
 
+	/*
+		Splitting each element by the tab character
+		Followed by splitting the 3rd element of the returned array by the new line character
+		The first element in the returned array is the IP Address
+	*/
+	addressFinder(IP) {
+		var ipAddresses = [];
+		IP.forEach(el =>{
+			ipAddresses.push( el.split('\t')[2].split('\n')[0] );
+		});
+		console.log(ipAddresses);
+	}
 
 }

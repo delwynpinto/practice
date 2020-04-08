@@ -1,5 +1,8 @@
 #Changes
 
+##0.2.1
+Extracting IP Addresses from the input JSON Array
+
 ##0.2.0
 Added IP Address finder component.
 Added sample JSON input file.
