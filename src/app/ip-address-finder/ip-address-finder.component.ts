@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import IP from '../../assets/IP.json';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ip-address-finder',
@@ -13,7 +13,9 @@ export class IpAddressFinderComponent {
 		key : IP Adsress
 		value : count of the times IP appears in input			
 	*/
+	toggleInput = false;
 	result = new Object();
+	input = IP;
 	constructor() {
 		this.addressFinder(IP);
 	}
@@ -35,6 +37,10 @@ export class IpAddressFinderComponent {
 				this.result[ip] = 1;
 			}
 		});
+	}
+
+	inputToggle() {
+		this.toggleInput ? this.toggleInput = false : this.toggleInput = true;
 	}
 
 }

@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
+import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatExpansionModule } from  '@angular/material';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -27,7 +27,8 @@ import { IpAddressFinderComponent } from './ip-address-finder/ip-address-finder.
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

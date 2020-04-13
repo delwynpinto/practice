@@ -1,1 +1,17 @@
-<p>ip-address-finder works!</p>
+<mat-accordion multi="true">
+
+	<!-- Input -->
+	<mat-expansion-panel class="input-panel">
+		<mat-expansion-panel-header>
+			<mat-panel-title>
+	        	Input
+			</mat-panel-title>
+		</mat-expansion-panel-header>
+
+		<div *ngFor="let el of input">
+			{{el}}
+		</div>
+	</mat-expansion-panel>
+
+	<!-- Output -->
+</mat-accordion>
