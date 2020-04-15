@@ -15,7 +15,7 @@ export class IpAddressFinderComponent {
 	*/
 	result = [];
 	input = IP;
-	columnsToDisplay = ['address', 'count'];
+	columnsToDisplay = ['index','address', 'count'];
 	constructor() {
 		this.addressFinder(IP);
 	}

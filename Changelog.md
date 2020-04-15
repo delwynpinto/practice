@@ -4,6 +4,7 @@
 Added code to extract IP Addresses from the input JSON Array.
 Storing the IP Address and its respective counter in an Object.
 Displaying IP Address and count in a material table.
+Added index to output table.
 
 ##0.2.0
 Added IP Address finder component.
