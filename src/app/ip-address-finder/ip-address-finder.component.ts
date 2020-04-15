@@ -13,13 +13,12 @@ export class IpAddressFinderComponent {
 		key : IP Adsress
 		value : count of the times IP appears in input			
 	*/
-	toggleInput = false;
-	result = new Object();
+	result = [];
 	input = IP;
+	columnsToDisplay = ['address', 'count'];
 	constructor() {
 		this.addressFinder(IP);
 	}
-
 	
 	addressFinder(IP) {
 		/*
@@ -27,20 +26,24 @@ export class IpAddressFinderComponent {
 		Followed by splitting the 3rd element of the returned array by the new line character
 		The first element in the returned array is the IP Address
 		*/
-		IP.forEach(el =>{			
+		var addressObject = new Object();
+		IP.forEach(el =>{		
 			var ip = el.split('\t')[2].split('\n')[0];
-			if(this.result.hasOwnProperty(ip) ) {
+			if(addressObject.hasOwnProperty(ip) ) {
 				// If ip already added, increment the counter
-				this.result[ip]++;
+				addressObject[ip]++;
 			}
 			else {
-				this.result[ip] = 1;
+				addressObject[ip] = 1;
 			}
 		});
-	}
 
-	inputToggle() {
-		this.toggleInput ? this.toggleInput = false : this.toggleInput = true;
-	}
+		for (var el in addressObject) {
+		    this.result.push({'address':el, 'count':addressObject[el]});
+		}
 
+		this.result.sort(function(a, b) {
+		    return a[1] - b[1];
+		});
+	}
 }
