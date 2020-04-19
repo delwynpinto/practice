@@ -1,5 +1,8 @@
 #Changes
 
+##0.3.0
+Added Random Quote Generator.
+
 ##0.2.1
 Added code to extract IP Addresses from the input JSON Array.
 Storing the IP Address and its respective counter in an Object.

@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ImageCropperComponent } from './image-cropper/image-cropper.component';
+import { QuoteGeneratorComponent } from './quote-generator/quote-generator.component';
 import { IpAddressFinderComponent } from './ip-address-finder/ip-address-finder.component';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { IpAddressFinderComponent } from './ip-address-finder/ip-address-finder.
     AppComponent,
     HomeComponent,
     ImageCropperComponent,
-    IpAddressFinderComponent
+    IpAddressFinderComponent,
+    QuoteGeneratorComponent
   ],
   imports: [
     BrowserModule,

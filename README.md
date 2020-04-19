@@ -62,6 +62,12 @@ RANK    Input               COUNT
 
 ---------------------------------------------------------------------------
 
+#Random Quote Generator
+
+Build an app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/qRZeGZ.
+
+---------------------------------------------------------------------------
+
 # Auto Generated
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
