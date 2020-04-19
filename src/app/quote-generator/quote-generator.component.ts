@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { QuoteGeneratorService } from '../quote-generator.service';
 
 @Component({
   selector: 'app-quote-generator',
   templateUrl: './quote-generator.component.html',
   styleUrls: ['./quote-generator.component.css']
 })
-export class QuoteGeneratorComponent implements OnInit {
+export class QuoteGeneratorComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+	constructor(private quoteService: QuoteGeneratorService) {
+		this.quoteService.getQuote();
+	}
 
 }
