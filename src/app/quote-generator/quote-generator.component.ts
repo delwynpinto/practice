@@ -8,8 +8,12 @@ import { QuoteGeneratorService } from '../quote-generator.service';
 })
 export class QuoteGeneratorComponent {
 
+	data;
 	constructor(private quoteService: QuoteGeneratorService) {
-		this.quoteService.getQuote();
+		this.newQuote();
 	}
 
+	newQuote() {
+		this.data  = this.quoteService.getQuote();
+	}
 }

@@ -3,7 +3,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatTableModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatExpansionModule } from  '@angular/material';
+import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { MatCardModule, MatTableModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatExpansionModule } from  '@angular/material';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -31,9 +34,17 @@ import { IpAddressFinderComponent } from './ip-address-finder/ip-address-finder.
     MatIconModule,
     HttpClientModule,
     MatExpansionModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+    constructor(library: FaIconLibrary) {
+    // Added icons to the library for convenient access in other components
+    library.addIcons(faFacebook);
+    library.addIcons(faTwitter);
+  }
+}

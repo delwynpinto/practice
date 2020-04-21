@@ -1,1 +1,27 @@
-<p>quote-generator works!</p>
+<div class="card-container" style="background-color: {{data.color}}">
+	
+	<!-- Angular Material card -->
+	<mat-card>
+		<!-- Card Content -->
+		<mat-card-content>
+			<div class="quote-text">{{data.quote}}</div>
+			<div class="quote-author">- {{data.author}}</div>
+		</mat-card-content>
+		
+		<!-- Action Buttons at the bottom of the card -->
+		<mat-card-actions>
+			<!-- Tweet -->
+			<button mat-flat-button class="button-sharing" style="background-color: {{data.color}}">
+				<fa-icon [icon]="['fab', 'twitter']" class="icon-sharing"></fa-icon>
+			</button>
+
+			<!-- Share on Facebook -->
+	    	<button mat-flat-button class="button-sharing" style="background-color: {{data.color}}">
+	    		<fa-icon [icon]="['fab', 'facebook']" class="icon-sharing"></fa-icon>
+	    	</button>
+
+	    	<!-- New Quote -->
+	    	<button mat-button class="button-new-quote" style="background-color: {{data.color}}" (click)="newQuote()">New Quote</button>
+		</mat-card-actions>
+	</mat-card>
+</div>

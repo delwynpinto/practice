@@ -1,0 +1,47 @@
+.mat-card  {
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+    padding-bottom: 55px;
+    text-align: center;
+    top: 30%;
+}
+
+.quote-author {
+	text-align: end;
+	height: auto;
+    clear: both;
+    font-size: 1em;
+}
+
+.quote-text,
+.mat-card-context  {
+	padding: 10px;
+}
+
+.quote-text {
+	height: auto;
+	clear: both;
+	font-weight: 500;
+	font-size: 1.75em;
+}
+
+.button-sharing {
+	float: left;
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+.button-new-quote {
+	float: right;
+	color: white;
+}
+
+.card-container {
+	height: 100%;
+	width : 100%;
+}
+
+.icon-sharing {
+	color: white;
+}
