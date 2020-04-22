@@ -2,6 +2,8 @@
 
 ##0.3.0
 Added Random Quote Generator.
+Added relevant HTML, CSS and code.
+Added font awesome for Facebook & Twitter icons.
 
 ##0.2.1
 Added code to extract IP Addresses from the input JSON Array.

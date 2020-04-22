@@ -11,12 +11,12 @@
 		<!-- Action Buttons at the bottom of the card -->
 		<mat-card-actions>
 			<!-- Tweet -->
-			<button mat-flat-button class="button-sharing" style="background-color: {{data.color}}">
+			<button mat-flat-button class="button-sharing"  matTooltip="Tweet this quote" style="background-color: {{data.color}}">
 				<fa-icon [icon]="['fab', 'twitter']" class="icon-sharing"></fa-icon>
 			</button>
 
 			<!-- Share on Facebook -->
-	    	<button mat-flat-button class="button-sharing" style="background-color: {{data.color}}">
+	    	<button mat-flat-button class="button-sharing"  matTooltip="Share this quote on Facebook"style="background-color: {{data.color}}">
 	    		<fa-icon [icon]="['fab', 'facebook']" class="icon-sharing"></fa-icon>
 	    	</button>
 
