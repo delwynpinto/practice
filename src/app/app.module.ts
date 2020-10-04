@@ -7,13 +7,13 @@ import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { MatTooltipModule, MatCardModule, MatTableModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatExpansionModule } from  '@angular/material';
 
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ImageCropperComponent } from './image-cropper/image-cropper.component';
 import { QuoteGeneratorComponent } from './quote-generator/quote-generator.component';
 import { IpAddressFinderComponent } from './ip-address-finder/ip-address-finder.component';
+import { MarkdownPreviewerComponent } from './markdown-previewer/markdown-previewer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { IpAddressFinderComponent } from './ip-address-finder/ip-address-finder.
     HomeComponent,
     ImageCropperComponent,
     IpAddressFinderComponent,
-    QuoteGeneratorComponent
+    QuoteGeneratorComponent,
+    MarkdownPreviewerComponent
   ],
   imports: [
     BrowserModule,

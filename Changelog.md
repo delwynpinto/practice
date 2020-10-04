@@ -1,5 +1,9 @@
 #Changes
 
+##0.4.0
+Added component & route for Markdown Previewer.
+Added basic HTML & CSS for markdown Previewer.
+
 ##0.3.0
 Added Random Quote Generator.
 Added relevant HTML, CSS and code.

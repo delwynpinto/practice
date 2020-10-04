@@ -6,11 +6,13 @@ import { HomeComponent } from './home/home.component';
 import { ImageCropperComponent } from './image-cropper/image-cropper.component';
 import { QuoteGeneratorComponent } from './quote-generator/quote-generator.component';
 import { IpAddressFinderComponent } from './ip-address-finder/ip-address-finder.component';
+import { MarkdownPreviewerComponent } from './markdown-previewer/markdown-previewer.component';
 
 const routes: Routes = [
 	{ path: 'ip-address-finder', component: IpAddressFinderComponent },
 	{ path: 'quote-generator', component: QuoteGeneratorComponent },
 	{ path: 'image-cropper', component: ImageCropperComponent },
+	{ path: 'markdown-previewer', component: MarkdownPreviewerComponent },
 	{ path: '', component: HomeComponent }
 ]
 
