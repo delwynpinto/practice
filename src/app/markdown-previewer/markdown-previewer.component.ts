@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-markdown-previewer',
   templateUrl: './markdown-previewer.component.html',
   styleUrls: ['./markdown-previewer.component.css']
 })
-export class MarkdownPreviewerComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class MarkdownPreviewerComponent {
+	
+	data = '';
+	constructor() { }
 }

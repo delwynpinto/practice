@@ -4,15 +4,14 @@
 	<div class="editor-container">
 		<div class="editor-toolbar">Editor</div>
 		<div>
-			<textarea matInput class="editor-textarea" rows="5" cols="40"></textarea>
+			<textarea matInput id="editor" class="editor-textarea" rows="5" cols="40" [(ngModel)]='data'></textarea>
 		</div>	    
 	</div>
 
 	<!-- Previewer -->
 	<div class="previewer-container">
 		<div class="previewer-toolbar">Previewer</div>
-		<div>
-			<textarea matInput class="previewer-textarea" rows="30" cols="70"></textarea>
+		<div id="preview" [innerHTML]="data | language : 'typescript' | markdown" class="previewer">
 		</div>	    
 	</div>
 </div>

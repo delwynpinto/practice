@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MarkdownModule } from 'ngx-markdown';
 import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { MatTooltipModule, MatCardModule, MatTableModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatExpansionModule } from  '@angular/material';
@@ -26,6 +28,7 @@ import { MarkdownPreviewerComponent } from './markdown-previewer/markdown-previe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -38,7 +41,8 @@ import { MarkdownPreviewerComponent } from './markdown-previewer/markdown-previe
     MatTableModule,
     MatCardModule,
     FontAwesomeModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
